@@ -1,0 +1,257 @@
+:root {
+    --color-texto: #504F4F;
+    --color-fondo: #ebebeb;
+    --color-hover: #272B26;
+    --color-hover-menu: #b9b7b7;
+}
+
+/* 
+==========================================
+    Extra pequeños: Teléfonos muy pequeños 
+    (hasta 534px de ancho)
+==========================================
+*/
+@media (max-width: 534px) {
+    body {
+    overflow-x: hidden;
+    }
+    
+    h1 {
+    margin: 0.5rem auto;
+    }
+    
+    h2 {
+    font-size: 2.3rem;
+    }
+    
+    .image-container img {
+    max-width: clamp(40%, 45vw, 50%)
+    }
+    
+    #manuscrito-izquierda-primero {
+    transform: translateX(-30%) translateY(45%) rotate(-30deg);
+    }
+
+    #manuscrito-izquierda-primero-ingles {
+        transform: translateX(-7%) translateY(21%) rotate(-30deg);
+    }
+    
+    #manuscrito-derecha-primero {
+    transform: translateX(17%) translateY(45%) rotate(30deg);
+    }
+
+    #manuscrito-derecha-primero-ingles {
+        transform: translateX(-5%) translateY(41%) rotate(30deg);
+    }
+    
+    #flecha-derecha-primero {
+    transform: translateX(-484%) translateY(-56%) rotate(-157deg);
+    }
+    
+    #manuscrito-izquierda-segundo {
+    transform: translateX(34%) translateY(-20%) rotate(30deg);
+    }
+    
+    #manuscrito-derecha-segundo {
+    transform: translateX(-14%) translateY(-50%) rotate(-30deg);
+    }
+    
+    .acerca-de {
+    padding: 0;
+    }
+    
+    .texto-formulario {
+    font-size: 1.2rem;
+    }
+    
+    .texto-footer {
+    font-size: 1rem;
+    text-align: right;
+    }
+
+    /**** CREDITOS ****/ 
+    .titulo-secundario {
+        font-size: 1.8rem;
+    }
+}
+
+/* 
+==========================================
+    Pequeños: Teléfonos estándar 
+    (hasta 767px de ancho)
+==========================================
+*/
+@media (max-width: 767px) {
+    header {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    grid-template-areas: 
+    "title lang menu";
+    gap: clamp(0.5rem, 2vw, 1rem);
+    padding: 0.5rem;
+    }
+    
+    .header-space-I, .header-space-II {
+    display: none;
+    }
+    
+    h1 {
+    grid-area: title;
+    font-size: 1.8rem;
+    margin: 0.5rem;
+    text-align: left;
+    white-space: normal;
+    }
+    
+    .header-button {
+    display: none;
+    }
+    
+    /* Mostrar la versión móvil */
+    .header-button-mobile {
+    display: inline-block;
+    grid-area: lang;
+    justify-self: center;
+    margin: 0.5rem; 
+    text-decoration: none;
+    text-align: center;
+    color: var(--color-texto);
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--color-hover);
+    border-radius: 5px;
+    font-family: 'Questrial', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+    
+    .header-button-mobile:hover {
+    background-color: var(--color-hover);
+    color: var(--color-fondo);
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    
+    .nav-bar {
+    grid-area: menu;
+    justify-self: end;
+    padding: 0;
+    }
+    
+    .nav-menu {
+    padding: 1rem 0;
+    }
+    
+    .nav-menu a {
+    font-size: 1.8rem;
+    }
+    
+    .menu-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    right: 2rem;
+    }
+    
+    .image-container img {
+    max-width: clamp(40%, 45vw, 48%)
+    }
+    
+    .manuscrito {
+    font-size: clamp(1.2rem, 3.5vw, 1.6rem);
+    }
+    
+    .flecha {
+    width: clamp(1rem, 3vw, 1.4rem);
+    }
+    
+    .video-container iframe {
+    width: 90%;
+    max-width: none;
+    }
+    
+    .galeria {
+    columns: 4 120px;
+    }
+    
+    .texto-formulario {
+    max-width: 90%;
+    }
+    
+    .footer-container {
+    padding: 1rem 0.5rem;
+    }
+
+    /**** CONTACTO ****/
+    .contact-container {
+        width: 90%;
+    }
+
+    /**** CREDITOS ****/
+    .video-creditos-container video {
+        width: 75%;
+    }
+
+    .textos-container {
+        width: 90%;
+    }
+}
+
+/* 
+==========================================
+    Tablets: (entre 768px y 1024px)
+==========================================
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    header {
+        flex-direction: row;
+    }
+
+    .header-space-I {
+        flex: 0.5;
+    }
+
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    #titulo-cont-cred {
+        text-align: left;
+    }
+
+    .header-button {
+        flex: 0.05;
+        font-size: 14px;
+        padding: 0.5rem clamp(0.5rem, 1vw, 1rem);
+    }
+
+    .nav-bar {
+        padding: 0;
+    }
+
+    .nav-menu a {
+        font-size: 2rem;
+    }
+
+    .menu-btn {
+        right: clamp(1rem, 2vw, 2rem);
+    }
+
+    .video-container iframe {
+        width: 80%;
+        max-width: 800px;
+    }
+
+    .galeria {
+        columns: 4 180px;
+    }
+
+    .acerca-de {
+        padding: 1rem 0;
+        width: 100%;
+        }
+
+    .social-media-container {
+        padding: 3rem 2rem 2rem;
+    }
+}

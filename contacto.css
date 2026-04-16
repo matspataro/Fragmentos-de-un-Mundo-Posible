@@ -1,0 +1,68 @@
+:root {
+    --color-texto: #504F4F;
+    --color-fondo: #ebebeb;
+    --color-hover: #272B26;
+    --color-hover-menu: #b9b7b7;
+}
+
+.titulo-secundario {
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+    font-size: 2rem;
+    margin: 2rem auto 1rem;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    margin: 1rem auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+}
+
+label {
+    margin: 2rem 2px 5px;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--color-texto);
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: var(--color-texto);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    border: 1px solid var(--color-texto);
+    color: var(--color-texto);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 19px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: var(--color-hover);
+    color: var(--color-fondo);
+}

@@ -1,0 +1,52 @@
+:root {
+    --color-texto: #504F4F;
+    --color-fondo: #ebebeb;
+    --color-hover: #272B26;
+    --color-hover-menu: #b9b7b7;
+}
+
+.titulo-secundario {
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+    font-size: 2rem;
+    margin: 2rem auto 3rem;
+}
+
+.cuerpo-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.textos-container {
+    max-width: 1100px;
+}
+
+h3 {
+    font-family: 'Special Elite', cursive;
+    font-size: 1.5rem;
+    color: var(--color-texto);
+    text-align: center;
+}
+
+.textos-creditos {
+    font-family: 'Questrial', sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.35;
+    color: var(--color-texto);
+    max-width: 75%;
+    margin: 12px auto 30px;
+}
+
+.video-creditos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    margin: 1rem auto;
+}
+
+.video-creditos-container video {
+    border-radius: 8px;
+    width: 50%;
+}
